@@ -1,0 +1,468 @@
+/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;}/*指定外边距和内边距为0*/
+body{background-image: url("../images/bg.jpg");border-image-repeat: repeat; margin:0px;padding:0px;font-size:14px;color:#000;}/*指定背景色，外边距内边距，字体大小颜色*/
+.menuHolder {width:100px; height:100px; margin:0px 0 250px 0px; position:fixed;z-index:100;}/*设定导航菜单宽高，外边距，设定导航菜单始终处于最上端 固定导航栏*/
+.menuHolder ul {padding:0; margin:0; list-style:none; position:fixed; left:0; top:0; width:0; height:0;}
+.menuHolder ul li a
+{
+	color:#000; text-decoration:none; font:bold 13px/30px arial, sans-serif; text-align:center;/**/
+	-webkit-transform-origin:0 0;/*设置旋转基点为左上角 safari chrome*/
+	-moz-transform-origin:0 0;/*设置旋转基点为左上角 firefox*/
+	-ms-transform-origin:0 0;/*设置旋转基点为左上角 ie*/
+	-o-transform-origin:0 0;/*设置旋转基点为左上角 opera*/
+	transform-origin:0 0;/*设置旋转基点为左上角*/
+}
+.menuHolder ul.p2 {z-index:-1;}/*做图层分层处理防止图像遮盖*/
+.menuHolder ul.p3 {z-index:-1;}/*做图层分层处理防止图像遮盖*/
+.menuHolder li.s1 > a 
+{position:absolute; display:block; width:100px; height:100px; background:#c8c8c8; border-radius:0 0 100px 0;}/*border-radius使导航菜单实现右下圆形*/
+.menuHolder li.s2 > a 
+{
+	position:absolute; display:block; width:100px; padding-left:100px; height:200px; background:#ddd; border-radius:0 0 200px 0;
+}/*第二层圆形实现*/
+.menuHolder ul.p3 li a 
+{
+	position:absolute; display:block; width:100px; padding-left:200px; height:300px; background:#999; border-radius:0 0 300px 0;/*第三层圆形实现*/
+}
+.menuHolder ul ul 
+{
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotateZ(90deg);
+	-ms-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	transform:rotate(90deg);
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	-ms-transition:1s;
+	-o-transition:1s;
+	transition:1s;
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder li.s2:nth-of-type(6) > a 
+{
+	background:#888;
+	-webkit-transform:rotate(75deg);
+	-moz-transform:rotateZ(75deg);
+	-ms-transform:rotate(75deg);
+	-o-transform:rotate(75deg);
+	transform:rotate(75deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder li.s2:nth-of-type(5) > a 
+{	background:#999;
+	-webkit-transform:rotate(60deg);
+	-moz-transform:rotateZ(60deg);
+	-ms-transform:rotate(60deg);
+	-o-transform:rotate(60deg);
+	transform:rotate(60deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder li.s2:nth-of-type(4) > a 
+{
+	background:#aaa;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder li.s2:nth-of-type(3) > a 
+{
+	background:#bbb;
+	-webkit-transform:rotate(30deg);
+	-moz-transform:rotateZ(30deg);
+	-ms-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+	transform:rotate(30deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder li.s2:nth-of-type(2) > a 
+{
+	background:#ccc;
+	-webkit-transform:rotate(15deg);
+	-moz-transform:rotateZ(15deg);
+	-ms-transform:rotate(15deg);
+	-o-transform:rotate(15deg);
+	transform:rotate(15deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a6 li:nth-of-type(6) > a 
+{
+	background:#444;
+	-webkit-transform:rotate(75deg);
+	-moz-transform:rotateZ(75deg);
+	-ms-transform:rotate(75deg);
+	-o-transform:rotate(75deg);
+	transform:rotate(75deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a6 li:nth-of-type(5) > a 
+{
+	background:#555;
+	-webkit-transform:rotate(60deg);
+	-moz-transform:rotateZ(60deg);
+	-ms-transform:rotate(60deg);
+	-o-transform:rotate(60deg);
+	transform:rotate(60deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a6 li:nth-of-type(4) > a 
+{
+	background:#666;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotateZ(45deg);
+	-ms-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a6 li:nth-of-type(3) > a 
+{
+	background:#777;
+	-webkit-transform:rotate(30deg);
+	-moz-transform:rotateZ(30deg);
+	-ms-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+	transform:rotate(30deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a6 li:nth-of-type(2) > a 
+{
+	background:#888;
+	-webkit-transform:rotate(15deg);
+	-moz-transform:rotateZ(15deg);
+	-ms-transform:rotate(15deg);
+	-o-transform:rotate(15deg);
+	transform:rotate(15deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a5 li:nth-of-type(5) > a 
+{
+	background:#555;
+	-webkit-transform:rotate(72deg);
+	-moz-transform:rotateZ(72deg);
+	-ms-transform:rotate(72deg);
+	-o-transform:rotate(72deg);
+	transform:rotate(72deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a5 li:nth-of-type(4) > a 
+{
+	background:#666;
+	-webkit-transform:rotate(54deg);
+	-moz-transform:rotateZ(54deg);
+	-ms-transform:rotate(54deg);
+	-o-transform:rotate(54deg);
+	transform:rotate(54deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a5 li:nth-of-type(3) > a 
+{
+	background:#777;
+	-webkit-transform:rotate(36deg);
+	-moz-transform:rotateZ(36deg);
+	-ms-transform:rotate(36deg);
+	-o-transform:rotate(36deg);
+	transform:rotate(36deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a5 li:nth-of-type(2) > a 
+{
+	background:#888;
+	-webkit-transform:rotate(18deg);
+	-moz-transform:rotateZ(18deg);
+	-ms-transform:rotate(18deg);
+	-o-transform:rotate(18deg);
+	transform:rotate(18deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a3 li:nth-of-type(3) > a 
+{	
+	background:#777;
+	-webkit-transform:rotate(60deg);
+	-moz-transform:rotateZ(60deg);
+	-ms-transform:rotate(60deg);
+	-o-transform:rotate(60deg);
+	transform:rotate(60deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder .a3 li:nth-of-type(2) > a 
+{	background:#888;
+	-webkit-transform:rotate(30deg);
+	-moz-transform:rotateZ(30deg);
+	-ms-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+	transform:rotate(30deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder li.s1:hover ul.p2 
+{
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotateZ(0deg);
+	-ms-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	transform:rotate(0deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder li.s2:hover ul.p3 
+{
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotateZ(0deg);
+	-ms-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	transform:rotate(0deg);
+}/*旋转特效实现 兼容浏览器*/
+.menuHolder ul li:hover > a {background:#5698c3; color:#fff;}/*实现鼠标放上颜色改变*/
+.menuHolder li.s2:hover > a {background:#5698c4; color:#fff;}
+.menuHolder .a6 li:hover > a {background:#5698c5; color:#fff;}
+.menuHolder .a5 li:hover > a {background:#5698c6; color:#fff;}
+.menuHolder .a3 li:hover > a {background:#5698c6; color:#fff;}
+.menuWindow 
+{
+	width:110px; height:110px; overflow:hidden; position:absolute; left:0; top:0; z-index:100;
+	-webkit-transition:0s 1s;
+	-moz-transition:0s 1s;
+	-ms-transition:0s 1s;
+	-o-transition:0s 1s;
+	transition:0s 1s;
+}
+.menuHolder:hover .menuWindow 
+{
+	width:310px; height:310px;
+	-webkit-transition:0s 0s;
+	-moz-transition:0s 0s;
+	-ms-transition:0s 0s;
+	-o-transition:0s 0s;
+	transition:0s 0s;
+}
+.menuHolder span 
+{
+	display:block; 
+	-webkit-transform:rotate(5deg);
+	-moz-transform:rotateZ(5deg);
+	-ms-transform:rotate(5deg);
+	-o-transform:rotate(5deg);
+	transform:rotate(5deg);
+}
+.menuHolder ~ img.close {width:0; height:0; position:fixed; z-index:-1; left:0; top:0;}
+.menuHolder:hover ~ img.close {width:100%; height:100%;}
+.button{ display:none;}
+
+*{ padding:0; margin:0; list-style:none;}
+
+#nav{ width:1400px; height:95px; background:#151515; margin: 0 auto;}
+#nav ul li{ width:200px; float:left;text-align:center;}
+#nav ul li img{ width:200px;text-align:center;padding-top:15px;}
+
+
+.banner dd{ width:1400px;height:740px;overflow:hidden;}
+.banner dt {
+	position: absolute;
+	margin-left: 80px;
+	top: 466px;
+	height: 68px;
+}
+.banner a {     display:block;margin:1px;width:50px;height:50px;text-align:center;font-size: 35px ;color:#fff;text-decoration:none;background:#666;border:1px solid #fff;filter:alpha(opacity=40);opacity:.4;   }
+.banner a:hover{background:#000}
+.banner2 img{ 
+	display: none;
+	width:1400px;}
+#nav ul li a {
+	text-decoration: none;
+	color: #A0A0A0;
+	display: block;     
+	height: 65px;
+	padding-top: 30px;
+}
+#nav ul li a:hover {
+	background: #2C2B2B ;
+	color: #2C69FD;
+}
+#nav ul li ul{
+	line-height: 60px;  list-style-type: none;text-align:left;
+ left: -999em; width: 200px; position: absolute; 
+}
+#nav ul li ul li{
+	height: 60px;
+	 width: 200px;
+ background:#383838; 
+}
+#nav ul li ul li a{
+	font-size: 20px;
+	text-align: center;
+	padding-top: 0px;
+}
+#nav ul li ul a{
+	display: block; width: 200px;text-align:center;
+}
+#nav ul li ul a:hover{
+	background:#424242 no-repeat center bottom;
+	color: #2C69FD;
+}
+#nav ul li:hover ul{
+	left:inherit;
+}
+#nav ul li:sfhover ul{
+	left:inherit;
+}
+
+.main {
+	width: 1400px;
+	margin: 0 auto;
+}
+.Mtitle {
+	
+	height: 60px;
+	color: #FFF;
+	font-weight: bold;
+	background: #818181;
+}
+.Mtitle strong {
+	border-left: solid 4px #fff;
+	font-size: 20px;
+	display: block;
+	float: left;
+	margin-top: -5px;
+	margin-left: 18px;
+	padding-left: 18px;
+}
+.Mtitle span {
+	font-size: 20px;
+	display: block;
+	float: right;
+	margin-top: -5px;
+	padding-right: 25px;
+}
+.product {
+	height: 160px;
+	padding-top: 10px;
+	border-bottom: solid 1px #999;
+	width:1000px; margin:0 auto 10px auto;
+}
+.product li {
+	float: left;
+	margin: 0 18px;
+	border: solid 2px #fff;
+}
+.product li img {
+	padding: 2px;
+	box-shadow: 3px 3px #999;
+}
+.contenter .left{
+	float:left;
+	width:"634";
+	float:left;
+	
+}
+.contenter .center{
+	float: left;
+	width:"634";
+	float:left;
+}
+.contenter .right{
+	width:"634";
+	float:left;
+}
+.contenter .right2{
+	width:"634";
+	
+}
+.footer {
+	text-align: center;
+	color: #A0A0A0;
+	line-height: 2em;
+}
+.footer a{
+text-decoration:none;
+}
+.fr{
+	float: right;}
+#sidebar a {color:#ddd; text-decoration:none; border-bottom:1px dotted #777;}
+#sidebar a:hover {color:#fff;}
+h1{color:#BEBEBE;font-size:55px;}
+#wrap{width:1120px; padding:20px;margin:0 auto;}
+#sidebar {margin:10px 0 30px 0;width:300px;float:left;}
+#content{margin:0px 0 30px 740px;width:400px;}
+#sidebar ul{margin:1px 0;padding:0;width:300px;}
+#sidebar ul li{margin:0;padding:0 0 0 10px;border-top:1px solid #333;clear:both;display:block;line-height:2em;list-style-type:none;}
+#sidebar ul li span{color:#aaa;}
+#sidebar ul li span,#sidebar ul li a{display:block;float:left;}
+#sidebar ul li a{font-weight:700;text-decoration:none;width:120px; border:0;}
+#sidebar ul li a:hover{color:#fff;}
+#sidebar ul li a:active{color:#eee;}
+#contactform input {width:220px;background-color:#222;color:#eee;border:1px solid #555;padding:5px;}
+#contactform #message {width:350px;background-color:#222;color:#eee;border:1px solid #555;padding:5px;}
+#submit_button{display:block;margin:0 auto;width:200px;height:50px;}
+#content h2{ color:#C6C6C6;font-size:30px}
+#content p{ color:#8D8D8D;font-size:17px}
+
+@media screen and (max-width:720px)
+{
+body { background-color: #ccc; }
+#nav{ height:0px; display:none;float:left;}
+.button{ display: block;}
+.banner{ display: none;}
+.banner2 img{ display: block;
+	width:100%;}
+/**/
+#nav ul li {
+	background: rgba(133,95,80,0.5);
+	border: solid 1px #eee;
+	height: 60px;
+	width: 180px;
+	text-align:center; margin-bottom:2px;
+	border-radius:5px;
+	clear:both;
+	position: relative;
+}
+/**/
+#nav ul li img{ width:170px;text-align:center;padding-top:0px;z-index: 999px;}
+#nav ul li a {
+	color: #fff;
+	height: 55px;
+	padding-top: 9px;
+} 
+#nav ul li a:hover {
+	background:#878666;
+	color: #2747AD;
+}
+#nav ul li ul{
+	line-height: 60px;  list-style-type: none;text-align:left;
+	left: -999em; width: 150px; position: absolute;} 
+#nav ul li ul li{
+	
+	height: 60px;
+	 width: 190px;
+ background: rgba(133,95,80,0.5) 
+	
+}
+#nav ul li ul li a{
+	font-size: 20px;
+	height: 60px;
+	width: 190px;
+	align: center;
+	padding-top: 0px;
+}
+#nav ul li ul a:hover{
+	background:#878666 ;
+	color: #2747AD;
+}
+#nav ul li:hover ul{
+	top:-65px;
+	left:180px;
+}
+#nav ul li:sfhover ul{
+	top:-65px;
+	left:180px;
+}
+#nav, .main, .Mtitle {
+	width: 100%;
+}
+.contenter { 
+	width:100%;
+	margin-left: 1px;
+	border: none;
+}
+.contenter2 { 
+	width:100%;
+	margin-left: 80px;
+	border: none;}
+.contenter ul li a img{
+	width:"100%"；
+	}
+}
+.tablefooter{
+	float:left;
+	left:1px;
+}
+
